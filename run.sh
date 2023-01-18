@@ -3,6 +3,6 @@ while :
 do
     echo "Run ZStats and calculate stats"
     mono ZStats.exe
-    echo "Waiting for next run..."
-    sleep 3600
+    echo "Next run in ${RUN_INTERVAL_IN_SECONDS} seconds"
+    sleep $RUN_INTERVAL_IN_SECONDS
 done
